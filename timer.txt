@@ -1,0 +1,7 @@
+set /p "segundos=Inserta el tiempo para apagar..."
+shutdown -s -t %seconds"
+echo Se ha activado una alarma de %seconds% segundos.
+timeout 10
+shutdown -a 
+echo La alarma ha sido cancelada.
+pause
